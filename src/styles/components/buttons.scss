@@ -1,0 +1,27 @@
+@import "variables";
+
+@each $key , $val  in $colors{
+        .btn-#{$key}{
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            background-color: $val;
+            border-radius: 10px ;
+            padding:5px 10px;
+            border:0;
+            margin: 2px;
+        }
+        .btn-outlined-#{$key}{
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color:$val;
+            background-color: white;
+            border-radius: 10px ;
+            border:1px solid $val;
+            padding:5px 10px;
+        }
+
+
+}
