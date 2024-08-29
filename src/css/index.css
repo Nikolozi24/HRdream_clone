@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .btn-primary {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -12,38 +18,13 @@
   margin: 2px;
 }
 
-.btn-secondary {
+.btn-outlined-primary {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
-  background-color: #187037;
+  color: #0362fc;
+  background-color: white;
   border-radius: 10px;
+  border: 1px solid #0362fc;
   padding: 5px 10px;
-  border: 0;
-  margin: 2px;
-}
-
-.btn-error {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: white;
-  background-color: #cf1111;
-  border-radius: 10px;
-  padding: 5px 10px;
-  border: 0;
-  margin: 2px;
-}
-
-.btn-pink {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: white;
-  background-color: #bd0fa8;
-  border-radius: 10px;
-  padding: 5px 10px;
-  border: 0;
-  margin: 2px;
 }

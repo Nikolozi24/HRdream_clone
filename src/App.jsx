@@ -1,13 +1,8 @@
-import { useState } from 'react'
-import Login from "./Components/Pages/Login"
-
+import Profile from "./Components/Pages/Profile"
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
 <>
-<Login/>
-
+<Profile/>
 </>
   )
 }

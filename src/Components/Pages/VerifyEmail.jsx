@@ -1,8 +1,9 @@
-/* trunk-ignore-all(prettier) */
-import React from "react";
+import React from 'react'
 import Utility from "./Utility.tsx";
 import { Google, Apple, KeyFill } from "react-bootstrap-icons";
-const Login = () => {
+
+
+const VerifyEmail = () => {
   return (
     <div className="grid grid-cols-12">
       <div className="bg-slate-800 font-bold roboto-regular col-span-4">
@@ -31,42 +32,35 @@ const Login = () => {
       </div>
       <div className=" col-span-8 p-5">
         <h1 className="text-right">
-          Don't have a account ? <strong > <a href="/sing_up">Sing Up</a> .</strong>
+         Already a member? ? <strong > <a href="/sing_up">Log in</a> .</strong>
         </h1>
-        <div className=" w-1/2  h-1/2 m-auto mt-40">
-          <h1 className="text-[30px] font-bold">Sing in</h1>
-          <br />
-          <span className="mt-10">Sing in using your account with</span>
-          <div className="flex gap-4">
-            <button className="flex  border-2 px-16 py-2 my-2 rounded-md ">
-              <Google className="my-auto mx-2" /> Google
-            </button>
-            <button className="flex  border-2 px-16 py-2 my-2 rounded-md ">
-              <Apple className="my-auto mx-2" />
-              Apple
-            </button>
-          </div>
-          <br />
-          <p>Or log in with your email address</p>
-          <div className="flex flex-col gap-4">
+        <div className=" w-1/2  h-1/2 m-auto mt-40 flex flex-col gap-4 w-1/2 h-1/2">
+          <h1 className="text-[30px] font-bold">Verify  your email </h1>
+       
+          <p>We have sent a verification code to your email inbox</p>
+          <div className="flex  gap-4">
             <input
-              className="border-2 w-5/6 h-10 py-6 pl-4 rounded-md mt-2"
-              placeholder="Email address"
+              className="border-2 bg-slate-100 btn-outline-primary w-20 h-20 m-auto flex justify-center align-middle text-center font-sans text-[20px] rounded-md mt-2"
             />
             <input
-              className="border-2 w-5/6 h-10 py-6 pl-4 rounded-md"
-              placeholder="password"
+              className="border-2 bg-slate-100 btn-outline-primary w-20 h-20 m-auto flex justify-center align-middle text-center font-sans text-[20px] rounded-md"
+            />
+            <input
+              className="border-2 bg-slate-100 btn-outline-primary w-20 h-20 m-auto flex justify-center align-middle text-center font-sans text-[20px] rounded-md"     
+            />
+            <input
+              className="border-2 bg-slate-100 btn-outline-primary w-20 h-20 m-auto flex justify-center align-middle text-center font-sans text-[20px] rounded-md "     
             />
           </div>
           <br />
           <button className="btn-primary w-5/6 py-10 h-12 font-bold">
-            Sing in
+               Verify
           </button>
           <br />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default VerifyEmail

@@ -1,8 +1,8 @@
-/* trunk-ignore-all(prettier) */
-import React from "react";
+import React from 'react'
 import Utility from "./Utility.tsx";
 import { Google, Apple, KeyFill } from "react-bootstrap-icons";
-const Login = () => {
+
+const SingUp = () => {
   return (
     <div className="grid grid-cols-12">
       <div className="bg-slate-800 font-bold roboto-regular col-span-4">
@@ -31,12 +31,12 @@ const Login = () => {
       </div>
       <div className=" col-span-8 p-5">
         <h1 className="text-right">
-          Don't have a account ? <strong > <a href="/sing_up">Sing Up</a> .</strong>
+         Already a member? ? <strong > <a href="/sing_up">Log in</a> .</strong>
         </h1>
         <div className=" w-1/2  h-1/2 m-auto mt-40">
-          <h1 className="text-[30px] font-bold">Sing in</h1>
+          <h1 className="text-[30px] font-bold">Sing Up</h1>
           <br />
-          <span className="mt-10">Sing in using your account with</span>
+          <span className="mt-10">Sing up with an already existing account</span>
           <div className="flex gap-4">
             <button className="flex  border-2 px-16 py-2 my-2 rounded-md ">
               <Google className="my-auto mx-2" /> Google
@@ -47,26 +47,32 @@ const Login = () => {
             </button>
           </div>
           <br />
-          <p>Or log in with your email address</p>
+          <p>Or sing up with your email address</p>
           <div className="flex flex-col gap-4">
             <input
               className="border-2 w-5/6 h-10 py-6 pl-4 rounded-md mt-2"
               placeholder="Email address"
             />
             <input
+               type='password'
               className="border-2 w-5/6 h-10 py-6 pl-4 rounded-md"
               placeholder="password"
+            />
+            <input
+               type='password'
+              className="border-2 w-5/6 h-10 py-6 pl-4 rounded-md"
+              placeholder=" Repeat password"
             />
           </div>
           <br />
           <button className="btn-primary w-5/6 py-10 h-12 font-bold">
-            Sing in
+                Create an account
           </button>
           <br />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default SingUp
