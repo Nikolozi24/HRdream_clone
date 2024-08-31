@@ -15,100 +15,23 @@ import {
 } from 'react-bootstrap-icons'
 import CombinedChart from '../Grapic/WeekChart'
 import { Button } from 'antd'
+import UpTasks from '../upcomingTasks/UpTasks'
+import NavBar from './NavBar'
+import Header from './Header'
 
 
 const Profile = () => {
-    const data = [
-        {
-            name:"Sun",
-            workHours:1,
-            totalHours:8,
-        },
-        {
-            name:"Mon",
-            workHours:4,
-            totalHours:8,
-        },
-        {
-            name:"Tue",
-            workHours:6,
-            totalHours:8,
-        },
-        {
-            name:"Wed",
-            workHours:8,
-            totalHours:8,
-        },
-        {
-            name:"Thu",
-            workHours:2,
-            totalHours:8,
-        },
-        {
-            name:"Fri",
-            workHours:3,
-            totalHours:8,
-        },
-        {
-            name:"Sat",
-            workHours:6,
-            totalHours:8,
-        },
-    ]
   return (
-    <div className=' flex'>
-        <div className=' col-start-1 col-span-1 w-1/6  h-full row-span-2 border-r-2 '>
-            <h1 className=" flex font-bold text-[20px] text-slate-700 gap-2 mt-10  ml-20">
-          <KeyFill className="my-auto" color="#0390fc" /> HRdream
-        </h1>
-    <ul className='m-auto w-1/2 flex flex-col text-[14px] gap-4 mt-8'>
-        <li className='flex gap-2 text-center align-middle' >
-                <Grid className='my-auto'/> Dashboard
-        </li>
-        <li className='flex gap-2 text-center align-middle' >
-         <GraphUp className='my-auto'/>     Applicant tracker
-         </li>
-        <li className='flex gap-3 text-center align-middle' ><People className='my-auto'/>People</li>
-        <li className='flex gap-3 text-center align-middle' ><PersonArmsUp className='my-auto'/>Who's away</li>
-        <li className='flex gap-3 text-center align-middle' ><ArrowCounterclockwise className='my-auto'/>Reflect</li>
-    </ul>
-        <div> 
-            <ul className='w-1/2 mx-auto flex flex-col gap-4 mt-96 mb-4'>
-        <li className='flex gap-3 text-center align-middle' ><Gear className='my-auto'/>settings</li>
-        <li className='flex gap-3 text-center align-middle' ><BoxArrowRight className='my-auto'/>Log out</li>
-                
-            </ul>
+    <div className=' flex '>
+        
 
-
-        </div>
-            </div>
+        <NavBar/>
 
             <div className='w-5/6  '>
-                <div className=' border-b-2 flex justify-between'>
-                        <div className='w-1/2 my-4 '>
-
-                      <div className=' w-5/6 bg-slate-100 flex h-10 m-auto rounded-md'>
-                        <input className='bg-slate-100 outline-none w-5/6 mx-auto' placeholder='Search'/> 
-                        <button className='flex w-10  justify-center text-center  '><Search className='m-auto'/></button>
-                        
-                      </div>   
-                        </div>
-                        <div className='my-auto'>
-                            <ul className='flex justify-around gap-3'>
-                                <li className='my-auto' ><Envelope/></li>
-                                <li className='my-auto' ><Bell/></li>
-                                <li >
-                                <a className='flex gap-3' href='#'>
-
-                                <img src="https://xsgames.co/randomusers/assets/avatars/female/21.jpg" className='rounded-full' width={30}  height={30 }/>
-                                 Admira Broom  <ChevronDown className='my-auto'/>
-                                </a>
-                                 </li>
-                            </ul>
-                        </div>
-                </div>
-                <div className='flex'>
-                    <div className='w-1/2 border-r-2 p-4 flex flex-col bg-slate-50 gap-1'>
+            <Header/>
+                
+                <div className='lg:flex lg:flex-row md:flex-col'>
+                    <div className='lg:w-1/2 border-r-2 p-4 flex flex-col bg-slate-50 gap-1'>
                     <h1 className='text-[25px] font-bold font-mono'>Good Morning, Admira</h1>
                     <p className='text-slate-400'>
                         Open the panel and watch your progress and growth in knowledge.
@@ -185,7 +108,7 @@ const Profile = () => {
 
                     </div>
                     </div>
-                    <div className='w-1/2 p-4 flex flex-col bg-slate-50 gap-8' >
+                    <div className='lg:w-1/2 p-4 flex flex-col bg-slate-50 gap-8' >
                             <h1 className='font-bold'>Quick Actions</h1>
                             <ul className='flex flex-row justify-around'>
                                 <li className='bg-blue-600  px-2 rounded-md py-6'>
@@ -220,6 +143,29 @@ const Profile = () => {
                                 </button></li>
                             </ul>
                             <h1 className='font-bold'>Upcoming calendar tasks</h1>
+                            <div className='flex flex-col gap-3'>
+                                <UpTasks text={"UX/UI workshop"} number={"05"} paragraph={"8 of 12 sessions, Mrs.Wilson"} time={"14:00-14:45"}/>
+                                <UpTasks text={"Interaction design"} number={"06"} paragraph={"8 of 12 sessions, Mrs.Wilson"} time={"11:00-14:45"} />
+                                <UpTasks
+                                text={"Team Meeting"}
+                                 number={"07"}
+                                 paragraph={"4 of 20 meetings , Design team"}
+                                 time={"12:00-12:35"}
+                                 />
+                                <UpTasks
+                                text={"User interview"}
+                                 number={"08"}
+                                 paragraph={"1of 2, Zoom Metting"}
+                                 time={"16:00-17:00"}
+                                 />
+                                <UpTasks
+                                text={"User Interview"}
+                                 number={"09"}
+                                 paragraph={"2 of 2, Zoom Meeting"}
+                                 time={"16:00-16:35"}
+                                 />
+                                <a className='text-center text-blue-500' href='#'>See the entire Schedule</a>
+                            </div>
                     </div>
                 </div>
             </div>

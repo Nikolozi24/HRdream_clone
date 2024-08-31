@@ -28,3 +28,14 @@
   border: 1px solid #0362fc;
   padding: 5px 10px;
 }
+
+.btn-outlined-pink {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #bd0fa8;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #bd0fa8;
+  padding: 5px 10px;
+}

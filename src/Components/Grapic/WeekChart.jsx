@@ -62,8 +62,7 @@ const CombinedChart = () => (
     <YAxis />
     <Tooltip />
     <Legend name='hell' />
-    <Bar  dataKey="hours" stackId="1" fill="#428df5" />
-    <Bar  dataKey="workHours" stackId="1" fill="#abd4ed" />
+    <Bar  dataKey="hours" stackId="1" fill="#428df5"  background={{fill:'#a8cff0'}} />
   
  </BarChart>
 
