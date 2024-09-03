@@ -6,7 +6,7 @@ import { Google, Apple, KeyFill } from "react-bootstrap-icons";
 const VerifyEmail = () => {
   return (
     <div className="grid grid-cols-12">
-      <div className="bg-slate-800 font-bold roboto-regular col-span-4">
+      <div className="bg-slate-800 font-bold roboto-regular col-span-4 h-[100vh]">
         <h1 className="text-white flex gap-2 mt-10  ml-20">
           <KeyFill className="my-auto" color="#0390fc" /> HRdream
         </h1>
@@ -32,7 +32,7 @@ const VerifyEmail = () => {
       </div>
       <div className=" col-span-8 p-5">
         <h1 className="text-right">
-         Already a member? ? <strong > <a href="/sing_up">Log in</a> .</strong>
+         Already a member? ? <strong > <a href="/Login">Log in</a> .</strong>
         </h1>
         <div className=" w-1/2  h-1/2 m-auto mt-40 flex flex-col gap-4 w-1/2 h-1/2">
           <h1 className="text-[30px] font-bold">Verify  your email </h1>

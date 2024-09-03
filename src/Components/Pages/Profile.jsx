@@ -1,12 +1,7 @@
 import { LinearScale } from 'chart.js'
 import React from 'react'
 import {
-     KeyFill, GraphUp , People, Grid , PersonArmsUp ,
-      ArrowCounterclockwise, Gear, BoxArrowRight,
-      Search,
-      Envelope,
-      Bell,
-      ChevronDown,
+ 
       Dot,
       Calendar3,
       Lightbulb,

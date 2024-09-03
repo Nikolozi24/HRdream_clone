@@ -23,7 +23,7 @@ const Header = () => {
                                 <li className='my-auto' ><Envelope/></li>
                                 <li className='my-auto' ><Bell/></li>
                                 <li >
-                                <a className='flex gap-3' href='#'>
+                                <a className='flex gap-3' href='/profile'>
 
                                 <img src="https://xsgames.co/randomusers/assets/avatars/female/21.jpg" className='rounded-full' width={30}  height={30 }/>
                                  Admira Broom  <ChevronDown className='my-auto'/>

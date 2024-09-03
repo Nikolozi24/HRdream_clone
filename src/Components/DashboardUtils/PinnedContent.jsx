@@ -1,6 +1,7 @@
-import React from 'react'
-import {Pin , ThreeDotsVertical} from 'react-bootstrap-icons'
+import React , {useState} from 'react'
+import {Pin , ThreeDotsVertical, PinFill} from 'react-bootstrap-icons'
 const PinnedContent = ({text}) => {
+  const [isPinned , setIsPinned] = useState(false)
   return (
     <div className='p-2 bg-white flex justify-between rounded-md shadow-lg'>
         <div>
@@ -9,7 +10,12 @@ const PinnedContent = ({text}) => {
             <p className='text-slate-500'>Monday , December 31,2024</p>
         </div>
         <div className='flex gap-3' >
-        <Pin/>
+        
+          
+    {
+      !isPinned?    <Pin title='pin'  className=" cursor-pointer " onClick={()=>{setIsPinned(prev=>!prev)}}/>:<PinFill title="unpin"onClick={()=>{setIsPinned(prev=>!prev)}} color="grey"/>
+    }
+        
         <ThreeDotsVertical/>
         </div>
     </div>

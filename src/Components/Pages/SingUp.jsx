@@ -1,11 +1,12 @@
 import React from 'react'
 import Utility from "./Utility.tsx";
 import { Google, Apple, KeyFill } from "react-bootstrap-icons";
-
+import {useNavigate} from 'react-router-dom'
 const SingUp = () => {
+  const navigate = useNavigate();
   return (
     <div className="grid grid-cols-12">
-      <div className="bg-slate-800 font-bold roboto-regular col-span-4">
+      <div className="bg-slate-800 font-bold roboto-regular col-span-4 h-[100vh]">
         <h1 className="text-white flex gap-2 mt-10  ml-20">
           <KeyFill className="my-auto" color="#0390fc" /> HRdream
         </h1>
@@ -31,7 +32,7 @@ const SingUp = () => {
       </div>
       <div className=" col-span-8 p-5">
         <h1 className="text-right">
-         Already a member? ? <strong > <a href="/sing_up">Log in</a> .</strong>
+         Already a member? ? <strong > <a href="/Login">Log in</a> .</strong>
         </h1>
         <div className=" w-1/2  h-1/2 m-auto mt-40">
           <h1 className="text-[30px] font-bold">Sing Up</h1>
@@ -65,7 +66,7 @@ const SingUp = () => {
             />
           </div>
           <br />
-          <button className="btn-primary w-5/6 py-10 h-12 font-bold">
+          <button onClick={()=>{navigate('/verify')}} className="btn-primary w-5/6 py-10 h-12 font-bold">
                 Create an account
           </button>
           <br />
